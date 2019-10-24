@@ -1,0 +1,13 @@
+﻿@page
+@model ShinobiRanks1._0.Pages.GetDataModel
+@{
+    ViewData["Title"] = "GetData";
+}
+
+<h1>GetData</h1>
+
+@foreach (var A_list in Model.HVGenin)
+{
+    <h3>@A_list.GeninName</h3>
+    <a asp-page="./Indiv" asp-route-id="@A_list.GID">Head to Indiv!</a>
+}

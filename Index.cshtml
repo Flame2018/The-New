@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                   
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">!KN!</span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <partial name="_LoginPartial" />
+                        <ul style="color:cornflowerblue" class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvillage/Index"><h4><b>Villages</b></h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvscrolls/Index"><h4><b>Scrolls</b></h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvkage/Index"><h4><b>Kages</b></h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvjounin/Index"><h4><b>Jounin</b></h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvchuunin/Index"><h4><b>Chuunin</b></h4></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="hvgenin/Index"><h4><b>Genin</b></h4></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <section class="text-center">
+        <img src="https://images.squarespace-cdn.com/content/v1/5851f274e4fcb5d73622e96d/1532561851821-HCGTSJXO6KCWZEG6KBW8/ke17ZwdGBToddI8pDm48kAWzt0GoCOR9y9_f7KU3T0AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z2fztFJqLg41TwSZ0I3ZjiAu2XUtydAeQg7Y9vzb-Qx6km_AaHWq01a8yFgqe9oqFs/Naruto+Website+Resolution.jpg" alt="Alternate Text" />
+    </section>
